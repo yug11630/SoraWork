@@ -6,14 +6,31 @@
 </div>
 <script>
 	function initMap() {
+		var pos =  {
+				"lat" : 37.498014,
+				"lng" : 127.027400
+			};
 		var map = new google.maps.Map(document.getElementById('map'),{
-				"center" : {
-					"lat" : 37.498014,
-					"lng" : 127.027400
-				},
+				"center" : pos,
 				"zoom" : 15
 			}
 		);
+		var marker1 = new google.maps.Marker({
+			"map" : map,
+			"position" : pos,
+			"title" : 'Hello World!'
+		});
+		
+		var marker2 = new google.maps.Marker({
+			"map" : map,
+			"position" : {
+				"lat" : 37.498104,
+				"lng" : 127.027500
+			},
+			"title" : '!Hello World'
+		});
+		
+		
 	}
 </script>
 <script
