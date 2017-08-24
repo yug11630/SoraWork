@@ -13,7 +13,7 @@
 		var map = new google.maps.Map(document.getElementById('map'),{
 				"center" : pos,
 				"zoom" : 15
-			}
+			}     
 		);
 		var marker1 = new google.maps.Marker({
 			"map" : map,
